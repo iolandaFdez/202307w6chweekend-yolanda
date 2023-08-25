@@ -9,7 +9,7 @@
     "server": "cross-env PORT=4300 nodemon dist/index.js",
     "server2": "nodemon dist/index.js",
     "server:prod": "cross-env PORT=4300 node dist/index.js",
-    "build": "tsc --watch",
+    "build": "npx tsc --watch",
     "start": "concurrently \"npm:server\" \"npm:build\"",
     "test": "jest --watchAll --coverage",
     "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests"
