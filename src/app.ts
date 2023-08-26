@@ -2,7 +2,7 @@ import cors from 'cors';
 import createDebug from 'debug';
 import express, { NextFunction, Request, Response } from 'express';
 import morgan from 'morgan';
-import { animalRouter } from './router/animal.router';
+import { animalRouter } from './router/animal.router.js';
 
 const debug = createDebug('W6E:App');
 
