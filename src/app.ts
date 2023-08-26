@@ -2,7 +2,7 @@ import cors from 'cors';
 import createDebug from 'debug';
 import express, { NextFunction, Request, Response } from 'express';
 import morgan from 'morgan';
-import { taskRouter } from './router/task.router.js';
+import { animalRouter } from './router/animal.router';
 
 const debug = createDebug('W6E:App');
 
@@ -26,4 +26,4 @@ app.get('/', (req: Request, res: Response) => {
   res.end();
 });
 
-app.use('/tasks', taskRouter);
+app.use('/animals', animalRouter);

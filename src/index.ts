@@ -9,7 +9,7 @@ const server = createServer(app);
 server.listen(PORT);
 
 server.on('listening', () => {
-  console.log(`Lisening on port ${PORT}`);
+  console.log(`Listening on port ${PORT}`);
 });
 
 server.on('error', (error) => {
