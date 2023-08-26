@@ -1,25 +1,26 @@
 [
   {
+    "id": "1",
     "animalName": "Ajolote",
     "scienceName": "Ambystoma mexicanum",
     "zone": ["México"],
-    "family": "Ambistomátidos o anfibios endémicos",
+    "family": "Ambistomátidos",
     "diet": "pequeños crustáceos, larvas de insectos, gusanos, babosas, caracoles, lombrices, renacuajos y algún pez."
   },
-
   {
+    "id": "2",
     "animalName": "Zorro del desierto",
     "scienceName": "Vulpes zerda",
     "zone": ["Desierto del Sáhara", "Península del Sinaí"],
     "family": "Canidae",
     "diet": "Plantas,roedores, huevos, reptiles e insectos"
   },
-
   {
+    "id": "4",
     "animalName": "Gato marsupial",
     "scienceName": "Dasyurus",
     "zone": ["Australia", "Nueva Guinea"],
-    "family": "Dasyuridae ",
+    "family": "Dasyuridae",
     "diet": [
       "Escarabajos",
       "Langostas",
@@ -29,5 +30,6 @@
       "Lombrices",
       "Fruta."
     ]
-  }
+  },
+  { "id": "fd7d6d3d-a9ae-48e7-b6dc-4da7c62bfba8" }
 ]

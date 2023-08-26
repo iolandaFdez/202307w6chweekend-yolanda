@@ -1,4 +1,5 @@
 export type Animals = {
+  id: string;
   animalName: string;
   scienceName: string;
   zone: string[];

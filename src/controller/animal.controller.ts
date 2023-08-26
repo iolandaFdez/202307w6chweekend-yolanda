@@ -13,7 +13,7 @@ export class AnimalController {
     const data: any[] = JSON.parse(
       await readFile('data.json', { encoding: 'utf-8' })
     );
-    const item = data.filter((item) => item.id === Number(id));
+    const item = data.filter((item) => item.id === id);
     res.json(item);
   }
 
