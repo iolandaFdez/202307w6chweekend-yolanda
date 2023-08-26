@@ -2,12 +2,12 @@ import 'dotenv/config';
 import express from 'express';
 import { createServer } from 'http';
 
-const app = express()
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) =>  {
-  res.send(Hola Mundo!);
+app.get('/', (req, res) => {
+  res.send('Hola Mundo');
 });
 
 app.listen(3000, () => {
