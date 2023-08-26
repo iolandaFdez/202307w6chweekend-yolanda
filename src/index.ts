@@ -1,14 +1,9 @@
 import 'dotenv/config';
-import express from 'express';
-import { createServer } from 'http';
 
-const app = express();
+import { createServer } from 'http';
+import { app } from './app.js';
 
 const PORT = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-  res.send('Hola Mundo');
-});
 
 app.listen(3000, () => {
   console.log('Servidor escuchando en http://localhost:3000');
