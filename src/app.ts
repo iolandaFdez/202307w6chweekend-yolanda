@@ -5,7 +5,6 @@ import morgan from 'morgan';
 
 import { animalRouter } from './router/animal.router.js';
 
-
 const debug = createDebug('Animals:App');
 
 export const app = express();
@@ -17,7 +16,6 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req: Request, res: Response) => {
-
   debug('Wild Animals');
   res.write('<h1>Learning about wild animals</h1>');
 
