@@ -2,7 +2,9 @@ import cors from 'cors';
 import createDebug from 'debug';
 import express, { Request, Response } from 'express';
 import morgan from 'morgan';
-import { animalRouter } from './router/animals.router.js';
+
+import { animalRouter } from './router/animal.router.js';
+
 
 const debug = createDebug('Animals:App');
 
@@ -15,8 +17,10 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req: Request, res: Response) => {
+
   debug('Wild Animals');
   res.write('<h1>Learning about wild animals</h1>');
+
   res.end();
 });
 
