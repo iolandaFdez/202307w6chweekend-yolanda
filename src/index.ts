@@ -2,17 +2,9 @@ import 'dotenv/config';
 import { createServer } from 'http';
 import { app } from './app';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4300;
 
-app.listen(3000, () => {
-  console.log('Servidor escuchando en http://localhost:3000');
-});
-
-const server = createServer((req, res) => {
-  console.log('Hola mundo');
-  res.write('<h1>Hola Mundo</h1>');
-  res.end();
-});
+const server = createServer(app);
 
 server.listen(PORT);
 
