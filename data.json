@@ -1,1 +1,35 @@
-[{"id":"1","animalName":"Ajolote","scienceName":"Ambystoma mexicanum","zone":["México"],"family":"Ambistomátidos","diet":"pequeños crustáceos, larvas de insectos, gusanos, babosas, caracoles, lombrices, renacuajos y algún pez."},{"id":"2","animalName":"Zorro del desierto","scienceName":"Vulpes zerda","zone":["Desierto del Sáhara","Península del Sinaí"],"family":"Canidae","diet":"Plantas,roedores, huevos, reptiles e insectos"},{"id":"4","animalName":"Gato marsupial","scienceName":"Dasyurus","zone":["Australia","Nueva Guinea"],"family":"Dasyuridae","diet":["Escarabajos","Langostas","Arácnidos","Crustáceos","Moluscos","Lombrices","Fruta."]},{"id":"ba651e20-8be8-4c76-aafe-c770486cb657"}]
+[
+  {
+    "id": "1",
+    "animalName": "Ajolote",
+    "scienceName": "Ambystoma mexicanum",
+    "zone": ["México"],
+    "family": "Ambistomátidos",
+    "diet": "pequeños crustáceos, larvas de insectos, gusanos, babosas, caracoles, lombrices, renacuajos y algún pez."
+  },
+  {
+    "id": "2",
+    "animalName": "Zorro del desierto",
+    "scienceName": "Vulpes zerda",
+    "zone": ["Desierto del Sáhara", "Península del Sinaí"],
+    "family": "Canidae",
+    "diet": "Plantas,roedores, huevos, reptiles e insectos"
+  },
+  {
+    "id": "4",
+    "animalName": "Gato marsupial",
+    "scienceName": "Dasyurus",
+    "zone": ["Australia", "Nueva Guinea"],
+    "family": "Dasyuridae",
+    "diet": [
+      "Escarabajos",
+      "Langostas",
+      "Arácnidos",
+      "Crustáceos",
+      "Moluscos",
+      "Lombrices",
+      "Fruta."
+    ]
+  },
+  { "id": "ba651e20-8be8-4c76-aafe-c770486cb657" }
+]
