@@ -30,7 +30,7 @@ export class AnimalController {
     res.json(newData);
   }
 
-  update(req: Request, res: Response) {
+  async update(req: Request, res: Response) {
     const { id } = req.params;
     res.send(`Patch Task id: ${id}`);
   }
