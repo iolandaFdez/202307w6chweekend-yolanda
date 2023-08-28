@@ -1,11 +1,13 @@
-export type WithId = {
+export type AnimalsId = {
   id: string;
 };
 
 export type AnimalsNoId = {
-  title: string;
-  owner: string;
-  isCompleted: boolean;
+  name: string;
+  scienceName: string;
+  zone: string[];
+  family: string;
+  diet: string[];
 };
 
-export type Animals = WithId & AnimalsNoId;
+export type Animals = AnimalsId & AnimalsNoId;

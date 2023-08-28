@@ -1,7 +1,8 @@
-import createDebug from 'debug';
 import { readFile, writeFile } from 'fs/promises';
-import { AnimalsNoId } from '../entities/animals.Id';
+// eslint-disable-next-line no-unused-vars
+import { AnimalsId, AnimalsNoId } from '../entities/animals.notId';
 import { Animals } from '../model/animals';
+import createDebug from 'debug';
 import { HttpError } from '../types/error';
 import { Repository } from './repository';
 
