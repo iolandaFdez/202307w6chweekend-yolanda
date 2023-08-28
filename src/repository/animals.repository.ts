@@ -1,10 +1,13 @@
-import createDebug from 'debug';
 import { readFile, writeFile } from 'fs/promises';
-import { Animals } from '../model/animals';
+
+import { AnimalsNoId, Animals } from '../entities/animals.Id';
+import createDebug from 'debug';
+import { HttpError } from '../types/error.js';
+import { Repository } from './repository.js';
 
 const debug = createDebug('W6E:Repo:AnimalsFsRepo');
 
-export class AnimalsFsRepository implements repository<Animals> {
+export class AnimalsRepository implements Repository<Animals> {
   private file: string;
   constructor() {
     this.file = 'data.json';
@@ -29,7 +32,15 @@ export class AnimalsFsRepository implements repository<Animals> {
   }
 
   async create(newData: AnimalsNoId): Promise<Animals> {
-    const newAnimal: Animals = { ...newData, id: crypto.randomUUID() };
+    const newAnimal: Animals = {
+      ...newData,
+      id: crypto.randomUUID(),
+      animalName: '',
+      scienceName: '',
+      zone: [],
+      family: '',
+      diet: [],
+    };
     const data: Animals[] = await this.getAll();
     data.push(newAnimal);
     await this.saveOnFile(data);
