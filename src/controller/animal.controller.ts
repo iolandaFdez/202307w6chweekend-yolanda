@@ -60,7 +60,7 @@ export class AnimalController {
       });
       res.json(updatedData);
     } catch (error) {
-      console.error('Error reading animals', error);
+      console.error('Error loading animals', error);
     }
   }
 }
