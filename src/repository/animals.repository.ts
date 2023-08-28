@@ -1,10 +1,9 @@
 import { readFile, writeFile } from 'fs/promises';
-// eslint-disable-next-line no-unused-vars
-import { AnimalsId, AnimalsNoId } from '../entities/animals.notId';
-import { Animals } from '../model/animals';
+
+import { AnimalsNoId, Animals } from '../entities/animals.Id';
 import createDebug from 'debug';
-import { HttpError } from '../types/error';
-import { Repository } from './repository';
+import { HttpError } from '../types/error.js';
+import { Repository } from './repository.js';
 
 const debug = createDebug('W6E:Repo:AnimalsFsRepo');
 

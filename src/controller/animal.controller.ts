@@ -1,13 +1,13 @@
 import { Request, Response, NextFunction } from 'express';
-import { Animals } from '../model/animals';
-import { ControllerStructure } from './controller.interface';
-import { Repository } from '../repository/repository';
+import { Animals } from '../entities/animals.Id';
+import { ControllerStructure } from './controller.interface.js';
+import { Repository } from '../repository/repository.js';
 import createDebug from 'debug';
 const debug = createDebug('W6E:Controller:AnimalsController');
 
 export class AnimalController implements ControllerStructure {
-  // eslint-disable-next-line no-unused-vars
   constructor(private repo: Repository<Animals>) {
+    this.repo = repo;
     debug('instantiated');
   }
 

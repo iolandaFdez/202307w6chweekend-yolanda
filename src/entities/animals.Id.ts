@@ -1,4 +1,4 @@
-export type AnimalsId = {
+type AnimalsId = {
   id: string;
 };
 
