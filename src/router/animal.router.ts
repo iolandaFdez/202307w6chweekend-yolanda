@@ -1,7 +1,9 @@
 import { Router as createRouter } from 'express';
 import { AnimalController } from '../controller/animal.controller.js';
+import { AnimalsRepository } from '../repository/animals.repository.js';
 
-const animalController = new AnimalController();
+const repo = new AnimalsRepository();
+const animalController = new AnimalController(repo);
 
 export const animalRouter = createRouter();
 

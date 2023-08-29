@@ -4,6 +4,7 @@ import express, { Request, Response } from 'express';
 import morgan from 'morgan';
 
 import { animalRouter } from './router/animal.router.js';
+import { errorMiddleware } from './middleware/error.middleware.js';
 
 const debug = createDebug('Animals:App');
 
@@ -23,3 +24,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.use('/animals', animalRouter);
+
+app.use(errorMiddleware);

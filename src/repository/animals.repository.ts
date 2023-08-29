@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'fs/promises';
 
 import { AnimalsNoId, Animals } from '../entities/animals.Id';
 import createDebug from 'debug';
-import { HttpError } from '../types/error.js';
+import { HttpError } from '../types/http.error.js';
 import { Repository } from './repository.js';
 
 const debug = createDebug('W6E:Repo:AnimalsFsRepo');
@@ -35,11 +35,6 @@ export class AnimalsRepository implements Repository<Animals> {
     const newAnimal: Animals = {
       ...newData,
       id: crypto.randomUUID(),
-      animalName: '',
-      scienceName: '',
-      zone: [],
-      family: '',
-      diet: [],
     };
     const data: Animals[] = await this.getAll();
     data.push(newAnimal);
