@@ -1,6 +1,10 @@
 import { Router as createRouter } from 'express';
 import { AnimalController } from '../controller/animal.controller.js';
 import { AnimalsRepository } from '../repository/animals.repository.js';
+import createDebug from 'debug';
+
+const debug = createDebug('W6E:Router:TasksRouter');
+debug('Loaded');
 
 const repo = new AnimalsRepository();
 const animalController = new AnimalController(repo);
