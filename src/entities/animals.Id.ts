@@ -1,4 +1,6 @@
-type AnimalsId = {
+import { Schema } from "mongoose";
+
+export type AnimalsId = {
   id: string;
 };
 
@@ -9,5 +11,7 @@ export type AnimalsNoId = {
   family: string;
   diet: string[];
 };
+
+
 
 export type Animals = AnimalsId & AnimalsNoId;
